@@ -1,0 +1,24 @@
+// Подключение шрифтов
+@mixin font-face($font-family, $file-path, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+		src: local('#{$file-path}'), url('../fonts/#{$file-path}.woff2') format('woff2'), url('../fonts/#{$file-path}.woff') format('woff');
+	}
+}
+
+// Медиа запрос
+@mixin media-max($mq) {
+	@media screen and (max-width: $mq) {
+		@content;
+	}
+}
+
+// Наведение только на ПК
+@mixin any-hover {
+	@media (any-hover: hover) {
+		@content;
+	}
+}

@@ -1,0 +1,13 @@
+// Стили плагинов (сторонние стили)
+
+// Вспомогательные стили
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+@import './helpers/fonts.scss';
+@import './helpers/reset.scss';
+
+// Базовые стили
+@import './base.scss';
+
+// Стили блоков
+@import './components/*.scss';

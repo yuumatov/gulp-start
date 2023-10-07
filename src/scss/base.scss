@@ -1,0 +1,45 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $f-roboto;
+	color: $c-black;
+	font-size: 16px;
+	background-color: $c-white;
+	min-width: 360px;
+
+	&.disable-scroll {
+		overflow: hidden;
+	}
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: $container;
+	padding: 0 $p-container;
+	margin: 0 auto;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+.vh {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+	white-space: nowrap;
+}
