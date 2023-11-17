@@ -1,7 +1,7 @@
 {
-	"name": "seosimply",
+	"name": "gulp-start",
 	"version": "1.0.0",
-	"description": "SEO Simply",
+	"description": "gulp-start",
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
