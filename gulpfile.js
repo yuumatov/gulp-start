@@ -99,6 +99,14 @@ const js = () => {
 				output: {
 					filename: 'build.js',
 				},
+				module: {
+					rules: [
+						{
+							test: /\.css$/,
+							use: ['style-loader', 'css-loader'],
+						},
+					],
+				},
 			})
 		)
 		.pipe(gulp.dest(path.build.js, { sourcemaps: isDev }))
@@ -172,6 +180,7 @@ const watcher = () => {
 
 const server = () => {
 	browserSync.init({
+		port: 5000,
 		server: {
 			baseDir: buildFolder,
 			index: 'index.html',

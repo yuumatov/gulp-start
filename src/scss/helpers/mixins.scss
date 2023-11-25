@@ -1,4 +1,4 @@
-// Подключение шрифтов
+// Connecting fonts
 @mixin font-face($font-family, $file-path, $weight: 400, $style: normal) {
 	@font-face {
 		font-family: $font-family;
@@ -9,14 +9,14 @@
 	}
 }
 
-// Медиа запрос
+// Media queries
 @mixin media-max($mq) {
 	@media screen and (max-width: $mq) {
 		@content;
 	}
 }
 
-// Наведение только на ПК
+// Hover on PC
 @mixin any-hover {
 	@media (any-hover: hover) {
 		@content;
