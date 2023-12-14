@@ -92,7 +92,7 @@ const scss = () => {
 const js = () => {
 	return gulp
 		.src(path.src.js, { sourcemaps: isDev })
-		.pipe(plumber())
+		.pipe(plumber({ errorHandler: notify.onError({ title: 'JS Error!' }) }))
 		.pipe(
 			webpack({
 				mode: isDev ? 'development' : 'production',
