@@ -6,8 +6,13 @@
 @import './helpers/fonts.scss';
 @import './helpers/reset.scss';
 
-// Базовые стили
-@import './base.scss';
+// Стили базовых компонентов
+@import './common/base.scss';
+@import './common/header.scss';
+@import './common/footer.scss';
 
-// Стили блоков
+// Стили компонентов
 @import './components/*.scss';
+
+// Стили секций
+@import './sections/*.scss';

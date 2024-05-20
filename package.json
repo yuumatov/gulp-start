@@ -1,6 +1,6 @@
 {
 	"name": "gulp-start",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "gulp-start",
 	"main": "gulpfile.js",
 	"type": "module",
@@ -25,6 +25,7 @@
 		"gulp-newer": "^1.4.0",
 		"gulp-notify": "^4.0.0",
 		"gulp-plumber": "^1.2.1",
+		"gulp-remove-html-comments": "^1.0.1",
 		"gulp-sass": "^5.1.0",
 		"gulp-sass-glob": "^1.1.0",
 		"gulp-svg-sprite": "^1.5.0",

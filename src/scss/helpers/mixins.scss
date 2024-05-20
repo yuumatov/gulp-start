@@ -22,3 +22,12 @@
 		@content;
 	}
 }
+
+// Reset style default btn
+@mixin btn-reset {
+	text-decoration: none;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}

@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import { deleteAsync } from 'del';
 import fileInclude from 'gulp-file-include';
 import typograf from 'gulp-typograf';
+import gulpRemoveHtmlComments from 'gulp-remove-html-comments';
 import htmlBeautify from 'gulp-html-beautify';
 import sassGlob from 'gulp-sass-glob';
 import * as dartSass from 'sass';
@@ -35,7 +36,7 @@ const path = {
 		resources: `${buildFolder}/`,
 	},
 	src: {
-		html: `${srcFolder}/*.html`,
+		html: `${srcFolder}/html/pages/*.html`,
 		scss: `${srcFolder}/scss/style.scss`,
 		js: `${srcFolder}/js/main.js`,
 		img: [`${srcFolder}/img/**/*.{png,jpeg,jpg,svg,gif}`, `!${srcFolder}/img/sprites/*.svg`],
@@ -66,6 +67,7 @@ const html = () => {
 				prefix: '@',
 			})
 		)
+		.pipe(gulpRemoveHtmlComments())
 		.pipe(htmlBeautify())
 		.pipe(
 			typograf({

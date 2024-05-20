@@ -1,0 +1,7 @@
+.btn {
+	@include btn-reset;
+	background-color: $c-accent;
+	color: $c-white;
+	padding: 10px 20px;
+	border-radius: $r-base;
+}

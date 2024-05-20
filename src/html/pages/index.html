@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@include("html/head.html", { "title": "Главная" })
+	@include("./../common/head.html", { "title": "Главная" })
 
 	<body>
 		<div class="page-wrapper">
-			@include("html/header.html")
+			@include("./../common/header.html")
 
 			<main class="main">
 				<div class="container">Body</div>
@@ -14,9 +14,10 @@
 			<section class="gulp-start">
 				<svg class="icon"><use xlink:href="./img/sprite.svg#gulp"></use></svg>
 				<h1>Gulp Start</h1>
+				<a href="http://gulp.yuumatov.ru/" target="_blank" class="btn">Подробнее</a>
 			</section>
 
-			@include("html/footer.html")
+			@include("./../common/footer.html")
 		</div>
 	</body>
 </html>
