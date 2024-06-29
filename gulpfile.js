@@ -197,3 +197,4 @@ const build = gulp.series(reset, gulp.parallel(html, scss, js, img, sprite, reso
 
 gulp.task('default', dev);
 gulp.task('build', build);
+gulp.task('start', server);

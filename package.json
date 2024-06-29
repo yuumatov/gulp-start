@@ -1,12 +1,13 @@
 {
 	"name": "gulp-start",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "gulp-start",
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
 		"dev": "gulp",
-		"build": "gulp build --build"
+		"build": "gulp build --build",
+		"start": "gulp start"
 	},
 	"author": "Yuumatov.ru",
 	"license": "ISC",
