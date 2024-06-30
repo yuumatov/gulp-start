@@ -193,7 +193,7 @@ const server = () => {
 };
 
 const dev = gulp.series(reset, gulp.parallel(html, scss, js, img, sprite, resources), gulp.parallel(watcher, server));
-const build = gulp.series(reset, gulp.parallel(html, scss, js, img, sprite, resources), server);
+const build = gulp.series(reset, gulp.parallel(html, scss, js, img, sprite, resources));
 
 gulp.task('default', dev);
 gulp.task('build', build);
