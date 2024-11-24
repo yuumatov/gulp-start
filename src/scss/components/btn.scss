@@ -1,5 +1,8 @@
 .btn {
 	@include btn-reset;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	background-color: $c-accent;
 	color: $c-white;
 	padding: 10px 20px;

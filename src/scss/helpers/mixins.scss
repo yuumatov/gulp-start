@@ -5,7 +5,7 @@
 		font-weight: $weight;
 		font-style: $style;
 		font-display: swap;
-		src: local('#{$file-path}'), url('../fonts/#{$file-path}.woff2') format('woff2'), url('../fonts/#{$file-path}.woff') format('woff');
+		src: local('#{$file-path}'), url('../fonts/#{$file-path}.woff2') format('woff2');
 	}
 }
 
